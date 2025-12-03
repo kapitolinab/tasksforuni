@@ -109,6 +109,45 @@
             font-weight: bold;
             margin-top: 10px;
         }
+        @media (max-width: 768px) {
+            .product-card {
+                width: 100%; 
+                margin: 10px 0;
+                padding: 10px;
+            }
+        
+            .product {
+                width: 100%;
+                font-size: 14px;
+            }
+            .n {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .np {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+            .np li {
+                display: block;
+                margin: 10px 0;
+            }
+            .np li a {
+                font-size: 16px;
+            }
+            form {
+                width: 100%;
+                padding: 10px;
+            }
+            form p {
+                font-size: 14px;
+            }
+        }
 </style>
 </head>
 <body>
@@ -235,4 +274,5 @@
         });
     </script>
 </body>
+
 </html>
