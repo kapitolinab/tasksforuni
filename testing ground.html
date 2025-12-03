@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>check this out</title>
+    
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+    /* Сброс стилей Bootstrap для ваших элементов */
+    body {
+        font-family: initial !important;
+        line-height: initial !important;
+    }
+    
+    /* Ваши оригинальные стили с адаптацией */
+    html, body {
+        cursor: url('iii.png'), auto;
+    }
+    body {
+        background-image: url('what.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: initial;
+        line-height: normal;
+    }
+    p {
+        color: rgb(0, 255, 106);
+        font-size: initial !important;
+        margin: initial !important;
+    }
+    h1, h2 {
+        font-family: initial !important;
+        font-weight: initial !important;
+        line-height: initial !important;
+        margin: initial !important;
+    }
+    .n {
+        text-align: center;
+    }
+    .np {
+        display: inline-block; 
+        padding: 0;
+        margin: 0;
+        list-style: none; 
+    }
+    .np a.active {
+        color:rgb(223, 0, 148)
+    }
+    .np li {
+        display: inline; 
+        margin-right: 15px; 
+    }
+    .np li a {
+        text-decoration: none;
+        font-size: 18px;
+        font-family: "Lucida Sans Unicode";
+        color: rgb(0, 255, 106);
+    }
+    .mainbanner {
+        width: 100%;
+        max-width: 700px;
+        min-height: 200px;
+        background-color: #99089e;
+        border: 5px solid #26e200;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        padding: 16px;
+        transition: transform 0.2s;
+    }
+    .mainbanner:hover {
+        transform: scale(1.02);
+    }
+    .mainbannertexth {
+        color: rgb(0, 255, 106);
+        font-size: clamp(24px, 5vw, 40px);
+        text-align: center;
+        margin: 0;
+        padding: 5px 0;
+    }
+    .mainbannertext {
+        color: rgb(0, 255, 106);
+        font-size: clamp(16px, 3vw, 20px);
+        text-align: center;
+        margin: 0;
+        padding: 5px 0;
+        line-height: 1.4;
+    }
+    .castlebanner{
+        width: 100%;
+        max-width: 700px;
+        min-height: 200px;
+        background-color: #7652ca;
+        border: 5px solid #000000;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .castleinfo {
+        color: white;
+        font-size: clamp(14px, 3vw, 20px);
+        margin: 10px;
+        line-height: 1.3;
+        flex: 1;
+    }
+    .kontain {
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 20px;
+        justify-content: center;
+        padding: 0 15px;
+    }
+    
+    /* Адаптивные стили для навигации */
+    @media (max-width: 768px) {
+        .np li {
+            display: block;
+            margin: 10px 0;
+        }
+        .np li a {
+            font-size: 16px;
+        }
+        .mainbanner {
+            margin: 10px;
+            padding: 12px;
+        }
+        .castlebanner {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .np li a {
+            font-size: 14px;
+        }
+        .mainbannertexth {
+            font-size: 20px;
+        }
+        .mainbannertext {
+            font-size: 14px;
+        }
+        .castleinfo {
+            font-size: 14px;
+            margin-left: 10px;
+        }
+    }
+    
+    /* Сброс стилей для изображений */
+    img {
+        margin: 0 !important;
+        padding: 0 !important;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Сброс стилей для ссылок */
+    a {
+        text-decoration: none !important;
+        color: inherit !important;
+    }
+    
+    /* Адаптивный баннер */
+    .responsive-banner {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Адаптивные изображения замков */
+    .castle-img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+    </style>
+</head>
+<body>
+<!-- Ваш HTML код с Bootstrap классами -->
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-12 text-center">
+            <h1 class="mb-4" style="color: rgb(0, 255, 106);">M@DJE'S CYBERCASTLE</h1>
+        </div>
+    </div>
+    
+    <nav class="n">
+        <ul class="np">
+            <li><a href="np.html" class="active">main page</a></li>
+            <li><a href="#ssylka">about cybercastles</a></li>
+            <li><a href="np2.html">where to start</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Haiti">LDS</a></li>
+            <li><a href="np3.html">order a custom cyberdeck</a></li>
+        </ul>
+    </nav>
+    
+    <div class="row justify-content-center mt-3">
+        <div class="col-12 text-center">
+            <a href="https://www.imdb.com/title/tt0117483/">
+                <img src="banner.jpg" alt="error" class="img-fluid responsive-banner" style="max-width: 900px;">
+            </a>
+        </div>
+    </div>
+    
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+            <div class="mainbanner">
+                <div class="mainbannertexth">the name's madge.</div>
+                <div class="mainbannertext">if you're here, you have received a special invitation<br>which in itself means i like you<br>so don't make me change my mind and behave you dog<br>and if you broke in, well</div>
+                <div class="mainbannertexth">i probably already know that.</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row justify-content-center text-center mt-4">
+        <div class="col-12">
+            <h2 style="color: rgb(0, 255, 106);" class="mb-3">ABOUT CYBERCASTLES</h2>
+            <p class="mb-2">this is a section dedicated to my one true passion: cybercastles.</p>
+            <p class="mb-2">cybercastles are cyberstructures i build on the lower layers of the net. they basically serve as...dungeons.</p>
+            <p class="mb-4">i stylize them after old pre-net 3D graphics, heh</p>
+        </div>
+    </div>
+    
+    <div class="kontain">
+        <div class="col-12 col-md-10 col-lg-8">
+            <div class="castlebanner mb-4">
+                <div class="row align-items-center h-100">
+                    <div class="col-12 col-sm-4 text-center">
+                        <img src="sad castle.jpg" alt="err" class="castle-img">
+                    </div>
+                    <div class="col-12 col-sm-8">
+                        <div class="castleinfo">A SAD CASTLE<br>my fortress of sadness, created when...<br>okay maybe thats a story for another site.<br>regardless, a rather nostalgic creation.<br>got broken into, unfortunately, so i had to abandon it.<br>i salvaged some data though and used it in a new project</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-12 col-md-10 col-lg-8">
+            <div class="castlebanner mb-4">
+                <div class="row align-items-center h-100">
+                    <div class="col-12 col-sm-4 text-center">
+                            <img src="endless castle.jpg" alt="err" class="castle-img">
+                        </div>
+                        <div class="col-12 col-sm-8">
+                            <div class="castleinfo">ENDLESS CASTLE<br>that one was pretty promising actually<br>untill i decided it was an awesome idea to teach killer smth<br>i have no idea what they did but wtf<br>then again, my fault for thinking killer could think<br>they apologized w booze though, so thats a win</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-10 col-lg-8">
+                <div class="castlebanner mb-4" id="ssylka">
+                    <div class="row align-items-center h-100">
+                        <div class="col-12 col-sm-4 text-center">
+                            <img src="lonelycybercastle.jpg" alt="err" class="castle-img">
+                        </div>
+                        <div class="col-12 col-sm-8">
+                            <div class="castleinfo">LOVELY CASTLE<br>made this one for vera.<br>she hasn't seen it though since we...you know<br>so i hid a replica of my, killer and i guess linh's room.<br>just in case.<br>hope we'll look back at it in years and laugh.<br>together.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Подключение Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

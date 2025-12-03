@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>cool stuff</title>
+<style>
+        html, body {
+            cursor: url('iii.png'), auto;
+        }
+        body {
+            background-image: url('what2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .n {
+            text-align: center;
+            }
+        .np {
+            display: inline-block; 
+            padding: 0;
+            margin: 0;
+            list-style: none; 
+            }
+        .np a.active {
+            color:rgb(223, 0, 148)
+         }
+        .np li {
+            display: inline; 
+            margin-right: 20px; 
+         }
+        .np li a {
+             text-decoration: none;
+             font-size: 20px;
+             font-family: "lucida sans unicode";
+             font-size: 20px; 
+             color: rgb(0, 255, 106);
+         }
+        .product-card {
+            width: 200px;
+            background-color: #99089e;
+            border: 1px solid #26e200;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin: 20px;
+            padding: 16px;
+            transition: transform 0.2s;
+            }
+
+        .product-card:hover {
+        transform: scale(1.05);
+        }
+
+        .product-image {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        }
+
+        .product-title {
+        font-size: 1.2em;
+        margin: 10px 0;
+        }
+
+        .product-price {
+        color: #00df25;
+        font-weight: bold;
+        margin-bottom: 10px;
+        }
+
+        .add-to-cart {
+        background-color: #ff00f2;
+        border: 1px solid #02a30f;
+        padding: 8px 16px;
+        cursor: pointer;
+        border-radius: 4px;
+        }
+
+        .add-to-cart:hover {
+        background-color: #99089e;
+        }
+
+        .kontain {
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 20px;
+        justify-content: center;
+        }
+        .products, .cart {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        }
+
+        .product, .cart-item {
+            border: 1px solid #ccc;
+            background-color: #02a30f;
+            padding: 10px;
+            margin: 10px;
+            width: 150px;
+            text-align: center;
+        }
+
+        .cart {
+            flex-direction: column;
+        }
+
+        #total {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+</style>
+</head>
+<body>
+  <center><h1 style="color: rgb(0, 255, 106);">M@DJE'S CYBERCASTLE</h1></center>
+    <nav class="n">
+         <ul class="np">
+            <li><a href=index.html>main page</a></li>
+            <li><a href=index.html#ssylka>about cybercastles</a></li>
+            <li><a href=np2.html>where to start</a></li>
+            <li><a href=https://en.wikipedia.org/wiki/Haiti>LDS</a></li>
+            <li><a href=np3.html class="active">order a custom cyberdeck</a></li>
+         </ul>
+      </nav>
+      <div class="kontain"; id="product-list">
+        <div class="product-card"; data-name="PT cd" data-price="600">
+            <img src="cd1.jpg" alt="Product Image" class="product-image" />
+            <h2 class="product-title">PT cyberdeck</h2>
+            <p class="product-price">§600</p>
+            <button class="add-to-cart"; onclick="addToCart(this)">buy now</button>
+        </div>
+        <div class="product-card"; data-name="sov cd" data-price="5000">
+            <img src="cd2.jpg" alt="Product Image" class="product-image" />
+            <h2 class="product-title">sovoil vintage cyberdeck</h2>
+            <p class="product-price">§5000</p>
+            <button class="add-to-cart"; onclick="addToCart(this)">buy now</button>
+        </div>
+        <div class="product-card"; data-name="nokia cd" data-price="1000">
+            <img src="cd3.png" alt="Product Image" class="product-image" />
+            <h2 class="product-title">NOKIA 'YOUTH' 100KS</h2>
+            <p class="product-price">§1000</p>
+            <button class="add-to-cart"; onclick="addToCart(this)">buy now</button>
+        </div>
+       </div>
+       <div class="kontain">
+        <div class="product-card"; data-name="simp lol cd" data-price="300">
+            <img src="cd4.jpeg" alt="Product Image" class="product-image" />
+            <h2 class="product-title">simple custom build</h2>
+            <p class="product-price">§300</p>
+            <button class="add-to-cart"; onclick="addToCart(this)">buy now</button>
+        </div>
+        <div class="product-card"; data-name="red cd" data-price="700">
+            <img src="cd5.png" alt="Product Image" class="product-image" />
+            <h2 class="product-title">RED40 flip</h2>
+            <p class="product-price">§700</p>
+            <button class="add-to-cart"; onclick="addToCart(this)">buy now</button>
+        </div>
+        <div class="product-card"; data-name="best option lol" data-price="10000">
+            <img src="cd6.jpg" alt="Product Image" class="product-image" />
+            <h2 class="product-title">custom baby for my fans</h2>
+            <p class="product-price">§10000</p>
+            <button class="add-to-cart"; onclick="addToCart(this)">buy now</button>
+        </div>
+      </div>
+
+        
+        <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+        <p style="color:#00df25">
+        some dirt on you
+            <input type="hidden" name="q" value="search">
+        </p>
+        <p style="color:#00df25">
+        your nickname:
+        <input type="text" name="name" value="bae">
+        </p>
+        <p style="color:#00df25">
+            gimme a random number:
+            <input type="number" name="numk" min="1" max="100" step="1" value="50">
+        </p>
+        <p style="color:#00df25">
+        where d i find yo
+        <input type="email" name="email" value="dontsignup@bleergh.com"></p>
+        <p style="color:#00df25">
+        tip for my hard work?
+        <input type="radio" name="dm" value="tippytip" checked>
+        15%
+        <input type="radio" name="dm" value="tipppp">
+        30%
+        </p>
+        <p style="color:#00df25">
+            your fave teeth member
+            <select name="fave">
+            <option value="killer">killer</option>
+            <option value="bitch">hound</option>
+            <option value="suoerioropt">youknowwho</option>
+            </select>
+        </p>
+        <p>
+        <input type="hidden" name="source" value="contact_form">
+        <input type="submit" value="send it">
+        </p>
+        <input type="hidden" name="products" value="">
+        </form>
+
+    <script>
+        const cartItems = [];
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', () => {
+            const productCard = button.closest('.product-card');
+            const name = productCard.dataset.name;
+            const price = parseFloat(productCard.dataset.price);
+
+            const existingItem = cartItems.find(item => item.name === name);
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cartItems.push({ name: name, price: price, quantity: 1 });
+            }
+            
+            alert('added to your cart lol. i know your adress, dont bother.');
+            });
+        });
+
+        document.getElementById('UserEnter').addEventListener('submit', function(e) {
+            const itemsDescription = cartItems.map(item => `${item.name} x${item.quantity}`).join(', ');
+            
+            let productsField = document.querySelector('input[name="products"]');
+            if (!productsField) {
+            productsField = document.createElement('input');
+            productsField.type = 'hidden';
+            productsField.name = 'products';
+            this.appendChild(productsField);
+            }
+            productsField.value = itemsDescription;
+        });
+    </script>
+</body>
+</html>
